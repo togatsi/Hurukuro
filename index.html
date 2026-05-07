@@ -3,45 +3,42 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hurukuro Communications | Pan-African Brand & Marketing Agency</title>
-  <meta name="description" content="Hurukuro Communications is a Pan-African brand strategy, creative and digital agency. 15+ years helping brands like Samsung Africa, Standard Bank and MultiChoice dominate their markets. Get a free strategy consultation." />
-  <meta name="keywords" content="Pan-African marketing agency, African brand strategy, digital marketing Africa, PR agency South Africa, brand communications Africa, marketing agency Johannesburg, African advertising agency" />
+  <title>Hurukuro | Pan-African Brand & Digital Performance Agency</title>
+  <meta name="description" content="Hurukuro is a Pan-African brand strategy and digital performance agency. 15+ years helping brands like Samsung Africa, Standard Bank and MultiChoice dominate their markets. Chat to us on WhatsApp." />
+  <meta name="keywords" content="Pan-African marketing agency, African brand strategy, digital performance Africa, PR agency South Africa, brand communications Africa, marketing agency Johannesburg, African advertising agency" />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://www.hurukuro.co.za/" />
 
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Hurukuro Communications | Pan-African Brand & Marketing Agency" />
-  <meta property="og:description" content="Your strategic partner for success stories. Data-driven brand strategy, creative and digital solutions across Africa and beyond." />
+  <meta property="og:title" content="Hurukuro | Pan-African Brand & Digital Performance Agency" />
+  <meta property="og:description" content="Your strategic partner for success stories. Data-driven brand strategy and digital performance solutions across Africa and beyond." />
   <meta property="og:url" content="https://www.hurukuro.co.za/" />
-  <meta property="og:site_name" content="Hurukuro Communications" />
+  <meta property="og:site_name" content="Hurukuro" />
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Hurukuro Communications | Pan-African Brand & Marketing Agency" />
-  <meta name="twitter:description" content="Your strategic partner for success stories. Data-driven brand strategy, creative and digital solutions across Africa." />
+  <meta name="twitter:title" content="Hurukuro | Pan-African Brand & Digital Performance Agency" />
+  <meta name="twitter:description" content="Your strategic partner for success stories. Data-driven brand strategy and digital performance across Africa." />
 
   <!-- Structured Data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "MarketingAgency",
-    "name": "Hurukuro Communications",
-    "description": "Pan-African brand strategy, creative and digital communications agency founded in 2009.",
+    "name": "Hurukuro",
+    "description": "Pan-African brand strategy and digital performance agency founded in 2009.",
     "url": "https://www.hurukuro.co.za",
     "telephone": "+27665175459",
     "email": "lloyd@hurukuro.co.za",
     "foundingDate": "2009",
-    "address": [
-      {
-        "@type": "PostalAddress",
-        "streetAddress": "11 Carrington Place, Pine Road, Broadacres",
-        "addressLocality": "Johannesburg",
-        "postalCode": "2191",
-        "addressCountry": "ZA"
-      }
-    ],
-    "sameAs": [],
+    "address": [{
+      "@type": "PostalAddress",
+      "streetAddress": "11 Carrington Place, Pine Road, Broadacres",
+      "addressLocality": "Johannesburg",
+      "postalCode": "2191",
+      "addressCountry": "ZA"
+    }],
     "areaServed": ["Africa", "Europe", "Global"]
   }
   </script>
@@ -49,22 +46,23 @@
   <style>
     /* ── Design Tokens ── */
     :root {
-      --navy:    #0A1628;
-      --navy-mid:#112240;
-      --gold:    #C9992A;
-      --gold-lt: #E8B84B;
-      --white:   #FFFFFF;
-      --off-white:#F7F6F2;
-      --mist:    #EFF1F5;
-      --slate:   #6B7A99;
-      --text:    #1C2A40;
-      --radius:  8px;
-      --shadow:  0 8px 32px rgba(10,22,40,.12);
-      --transition: .3s cubic-bezier(.4,0,.2,1);
-      --max-w:   1200px;
+      --navy:      #0D1B2E;
+      --navy-mid:  #122240;
+      --blue:      #2563EB;
+      --blue-lt:   #60A5FA;
+      --blue-pale: rgba(37,99,235,.12);
+      --white:     #FFFFFF;
+      --off-white: #F5F7FA;
+      --mist:      #EEF2F9;
+      --slate:     #64748B;
+      --text:      #1C2A40;
+      --wa-green:  #25D366;
+      --radius:    8px;
+      --shadow:    0 8px 32px rgba(13,27,46,.13);
+      --transition:.3s cubic-bezier(.4,0,.2,1);
+      --max-w:     1200px;
     }
 
-    /* ── Reset ── */
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; font-size: 16px; }
     body {
@@ -85,9 +83,10 @@
       font-weight: 700;
       letter-spacing: .12em;
       text-transform: uppercase;
-      color: var(--gold);
+      color: var(--blue);
       margin-bottom: .75rem;
     }
+    .tag.light { color: var(--blue-lt); }
     .section-title {
       font-size: clamp(1.75rem, 4vw, 2.75rem);
       font-weight: 800;
@@ -101,14 +100,14 @@
       margin-top: .75rem;
       max-width: 600px;
     }
-    .section-sub.light { color: rgba(255,255,255,.75); }
+    .section-sub.light { color: rgba(255,255,255,.7); }
     section { padding: 5rem 0; }
 
     /* ── Buttons ── */
     .btn {
       display: inline-flex;
       align-items: center;
-      gap: .5rem;
+      gap: .55rem;
       padding: .875rem 2rem;
       border-radius: 50px;
       font-size: 1rem;
@@ -118,57 +117,94 @@
       border: none;
     }
     .btn-primary {
-      background: var(--gold);
-      color: var(--navy);
+      background: var(--blue);
+      color: var(--white);
     }
-    .btn-primary:hover { background: var(--gold-lt); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(201,153,42,.4); }
+    .btn-primary:hover { background: #1d4ed8; transform: translateY(-2px); box-shadow: 0 8px 24px rgba(37,99,235,.4); }
     .btn-outline {
       background: transparent;
       color: var(--white);
-      border: 2px solid rgba(255,255,255,.5);
+      border: 2px solid rgba(255,255,255,.4);
     }
-    .btn-outline:hover { border-color: var(--gold); color: var(--gold); transform: translateY(-2px); }
-    .btn-dark {
-      background: var(--navy);
+    .btn-outline:hover { border-color: var(--blue-lt); color: var(--blue-lt); transform: translateY(-2px); }
+    .btn-wa {
+      background: var(--wa-green);
       color: var(--white);
     }
-    .btn-dark:hover { background: var(--navy-mid); transform: translateY(-2px); box-shadow: var(--shadow); }
+    .btn-wa:hover { background: #1ebe5d; transform: translateY(-3px); box-shadow: 0 10px 28px rgba(37,211,102,.35); }
+
+    /* ── WhatsApp floating button ── */
+    #wa-float {
+      position: fixed;
+      bottom: 1.75rem;
+      right: 1.75rem;
+      z-index: 150;
+      width: 58px; height: 58px;
+      border-radius: 50%;
+      background: var(--wa-green);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 6px 20px rgba(37,211,102,.45);
+      transition: var(--transition);
+      animation: wa-bounce 2.5s ease-in-out 3s 3;
+    }
+    #wa-float:hover { transform: scale(1.12); box-shadow: 0 10px 30px rgba(37,211,102,.55); }
+    #wa-float svg { width: 30px; height: 30px; }
+    @keyframes wa-bounce {
+      0%,100% { transform: translateY(0); }
+      50%      { transform: translateY(-8px); }
+    }
+    .wa-tooltip {
+      position: absolute;
+      right: 68px;
+      white-space: nowrap;
+      background: var(--navy);
+      color: var(--white);
+      font-size: .8rem;
+      font-weight: 600;
+      padding: .4rem .9rem;
+      border-radius: 50px;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity var(--transition);
+    }
+    #wa-float:hover .wa-tooltip { opacity: 1; }
+
+    /* ── Scroll Progress ── */
+    #progress {
+      position: fixed;
+      top: 0; left: 0;
+      height: 3px;
+      background: var(--blue);
+      z-index: 200;
+      transition: width .1s linear;
+    }
 
     /* ── Nav ── */
     #nav {
       position: fixed;
       top: 0; left: 0; right: 0;
       z-index: 100;
-      padding: 1.1rem 0;
-      transition: background var(--transition), box-shadow var(--transition);
+      padding: 1rem 0;
+      transition: background var(--transition), box-shadow var(--transition), padding var(--transition);
     }
     #nav.scrolled {
       background: var(--navy);
-      box-shadow: 0 2px 20px rgba(0,0,0,.3);
-      padding: .75rem 0;
+      box-shadow: 0 2px 24px rgba(0,0,0,.35);
+      padding: .65rem 0;
     }
     .nav-inner {
       display: flex;
       align-items: center;
       justify-content: space-between;
     }
-    .nav-logo {
+    /* ── Logo SVG ── */
+    .logo-lockup {
       display: flex;
       align-items: center;
-      gap: .75rem;
+      gap: 0;
     }
-    .logo-img {
-      height: 48px;
-      width: auto;
-    }
-    .logo-placeholder {
-      height: 48px;
-      width: 120px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    .logo-svg { height: 48px; width: auto; }
     .nav-links {
       display: flex;
       align-items: center;
@@ -176,13 +212,12 @@
       list-style: none;
     }
     .nav-links a {
-      color: rgba(255,255,255,.85);
+      color: rgba(255,255,255,.82);
       font-size: .9rem;
       font-weight: 500;
       transition: color var(--transition);
     }
-    .nav-links a:hover { color: var(--gold); }
-    .nav-cta { margin-left: .5rem; }
+    .nav-links a:hover { color: var(--blue-lt); }
     .hamburger {
       display: none;
       flex-direction: column;
@@ -193,12 +228,29 @@
       border: none;
     }
     .hamburger span {
-      display: block;
-      width: 24px;
-      height: 2px;
-      background: var(--white);
-      border-radius: 2px;
+      display: block; width: 24px; height: 2px;
+      background: var(--white); border-radius: 2px;
       transition: var(--transition);
+    }
+
+    /* ── Mobile Nav ── */
+    .mobile-nav {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: var(--navy);
+      z-index: 99;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+    }
+    .mobile-nav.open { display: flex; }
+    .mobile-nav a { font-size: 1.5rem; font-weight: 700; color: var(--white); transition: color var(--transition); }
+    .mobile-nav a:hover { color: var(--blue-lt); }
+    .mobile-close {
+      position: absolute; top: 1.5rem; right: 1.5rem;
+      background: none; border: none; color: var(--white); font-size: 2rem; cursor: pointer;
     }
 
     /* ── Hero ── */
@@ -206,8 +258,8 @@
       min-height: 100vh;
       background: var(--navy);
       background-image:
-        radial-gradient(ellipse 80% 60% at 70% 40%, rgba(201,153,42,.15) 0%, transparent 60%),
-        radial-gradient(ellipse 50% 80% at 10% 80%, rgba(201,153,42,.08) 0%, transparent 50%);
+        radial-gradient(ellipse 70% 60% at 75% 35%, rgba(37,99,235,.18) 0%, transparent 60%),
+        radial-gradient(ellipse 50% 70% at 5% 80%,  rgba(37,99,235,.08) 0%, transparent 55%);
       display: flex;
       align-items: center;
       padding: 7rem 0 5rem;
@@ -224,28 +276,25 @@
       display: inline-flex;
       align-items: center;
       gap: .5rem;
-      background: rgba(201,153,42,.15);
-      border: 1px solid rgba(201,153,42,.3);
+      background: rgba(37,99,235,.15);
+      border: 1px solid rgba(37,99,235,.35);
       border-radius: 50px;
       padding: .4rem 1rem;
       font-size: .8rem;
       font-weight: 700;
       letter-spacing: .1em;
       text-transform: uppercase;
-      color: var(--gold);
+      color: var(--blue-lt);
       margin-bottom: 1.5rem;
     }
     .hero-eyebrow::before {
       content: '';
       width: 6px; height: 6px;
       border-radius: 50%;
-      background: var(--gold);
+      background: var(--blue-lt);
       animation: pulse 2s infinite;
     }
-    @keyframes pulse {
-      0%, 100% { opacity: 1; }
-      50% { opacity: .4; }
-    }
+    @keyframes pulse { 0%,100%{opacity:1}50%{opacity:.35} }
     .hero-title {
       font-size: clamp(2.4rem, 5vw, 4rem);
       font-weight: 900;
@@ -253,44 +302,19 @@
       color: var(--white);
       margin-bottom: 1.25rem;
     }
-    .hero-title span { color: var(--gold); }
-    .hero-desc {
-      font-size: 1.15rem;
-      color: rgba(255,255,255,.72);
-      margin-bottom: 2.25rem;
-      max-width: 520px;
-    }
+    .hero-title span { color: var(--blue-lt); }
+    .hero-desc { font-size: 1.1rem; color: rgba(255,255,255,.7); margin-bottom: 2.25rem; max-width: 520px; }
     .hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 3rem; }
     .hero-stats {
-      display: flex;
-      gap: 2.5rem;
+      display: flex; gap: 2.5rem;
       padding-top: 2rem;
       border-top: 1px solid rgba(255,255,255,.1);
     }
-    .stat-val {
-      font-size: 2rem;
-      font-weight: 900;
-      color: var(--gold);
-      line-height: 1;
-    }
-    .stat-lbl {
-      font-size: .8rem;
-      color: rgba(255,255,255,.55);
-      margin-top: .2rem;
-      text-transform: uppercase;
-      letter-spacing: .05em;
-    }
-    .hero-visual {
-      position: relative;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    .hero-card-stack {
-      position: relative;
-      width: 100%;
-      max-width: 460px;
-    }
+    .stat-val { font-size: 2rem; font-weight: 900; color: var(--blue-lt); line-height: 1; }
+    .stat-lbl { font-size: .78rem; color: rgba(255,255,255,.5); margin-top: .2rem; text-transform: uppercase; letter-spacing: .05em; }
+    /* Hero visual card */
+    .hero-visual { position: relative; display: flex; justify-content: center; align-items: center; }
+    .hero-card-stack { position: relative; width: 100%; max-width: 460px; }
     .h-card {
       background: rgba(255,255,255,.05);
       border: 1px solid rgba(255,255,255,.1);
@@ -300,93 +324,46 @@
       color: var(--white);
     }
     .h-card-main {
-      background: linear-gradient(135deg, rgba(201,153,42,.2), rgba(201,153,42,.05));
-      border-color: rgba(201,153,42,.3);
+      background: linear-gradient(135deg, rgba(37,99,235,.22), rgba(37,99,235,.06));
+      border-color: rgba(37,99,235,.35);
       padding: 2rem;
     }
-    .h-card-float {
-      position: absolute;
-      width: 220px;
-    }
+    .h-card-float { position: absolute; width: 220px; }
     .h-card-float.top-right {
-      top: -1.5rem;
-      right: -1.5rem;
-      background: var(--gold);
+      top: -1.5rem; right: -1.5rem;
+      background: var(--blue);
       border-color: transparent;
     }
-    .h-card-float.top-right * { color: var(--navy); }
-    .h-card-float.bottom-left {
-      bottom: -1.5rem;
-      left: -1.5rem;
-    }
-    .card-icon {
-      font-size: 1.75rem;
-      margin-bottom: .5rem;
-    }
-    .card-label { font-size: .75rem; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; opacity: .7; }
-    .card-value { font-size: 1.5rem; font-weight: 900; line-height: 1.1; margin-top: .2rem; }
+    .h-card-float.bottom-left { bottom: -1.5rem; left: -1.5rem; }
+    .card-icon { font-size: 1.75rem; margin-bottom: .5rem; }
+    .card-label { font-size: .72rem; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; opacity: .7; }
+    .card-value { font-size: 1.4rem; font-weight: 900; line-height: 1.15; margin-top: .2rem; }
     .card-sub { font-size: .8rem; opacity: .6; margin-top: .25rem; }
     .services-list { margin-top: 1rem; }
-    .services-list li {
-      display: flex;
-      align-items: center;
-      gap: .5rem;
-      font-size: .85rem;
-      padding: .3rem 0;
-      border-bottom: 1px solid rgba(255,255,255,.08);
-    }
+    .services-list li { display: flex; align-items: center; gap: .5rem; font-size: .85rem; padding: .3rem 0; border-bottom: 1px solid rgba(255,255,255,.08); }
     .services-list li:last-child { border-bottom: none; }
-    .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--gold); flex-shrink: 0; }
+    .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--blue-lt); flex-shrink: 0; }
 
     /* ── Clients Bar ── */
     #clients {
-      padding: 2.5rem 0;
+      padding: 2.25rem 0;
       background: var(--off-white);
       border-top: 1px solid rgba(0,0,0,.05);
       border-bottom: 1px solid rgba(0,0,0,.05);
     }
-    .clients-inner {
-      display: flex;
-      align-items: center;
-      gap: 2rem;
-      flex-wrap: wrap;
-    }
-    .clients-label {
-      font-size: .75rem;
-      font-weight: 700;
-      letter-spacing: .12em;
-      text-transform: uppercase;
-      color: var(--slate);
-      white-space: nowrap;
-      flex-shrink: 0;
-    }
-    .clients-logos {
-      display: flex;
-      align-items: center;
-      gap: 2.5rem;
-      flex-wrap: wrap;
-    }
-    .client-name {
-      font-size: 1rem;
-      font-weight: 800;
-      color: #9BA8B8;
-      letter-spacing: .02em;
-      transition: color var(--transition);
-      white-space: nowrap;
-    }
+    .clients-inner { display: flex; align-items: center; gap: 2rem; flex-wrap: wrap; }
+    .clients-label { font-size: .72rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--slate); white-space: nowrap; flex-shrink: 0; }
+    .clients-logos { display: flex; align-items: center; gap: 2.5rem; flex-wrap: wrap; }
+    .client-name { font-size: 1rem; font-weight: 800; color: #9BA8BC; letter-spacing: .02em; transition: color var(--transition); white-space: nowrap; }
     .client-name:hover { color: var(--navy); }
 
     /* ── Services ── */
     #services { background: var(--white); }
     .services-header { max-width: 640px; margin-bottom: 3.5rem; }
-    .services-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 1.5rem;
-    }
+    .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem; }
     .service-card {
       background: var(--white);
-      border: 1.5px solid #E5E8EF;
+      border: 1.5px solid #E2E8F0;
       border-radius: 16px;
       padding: 2rem;
       transition: var(--transition);
@@ -395,224 +372,114 @@
     }
     .service-card::before {
       content: '';
-      position: absolute;
-      top: 0; left: 0; right: 0;
-      height: 3px;
-      background: linear-gradient(90deg, var(--gold), var(--gold-lt));
-      transform: scaleX(0);
-      transform-origin: left;
+      position: absolute; top: 0; left: 0; right: 0; height: 3px;
+      background: linear-gradient(90deg, var(--blue), var(--blue-lt));
+      transform: scaleX(0); transform-origin: left;
       transition: transform var(--transition);
     }
-    .service-card:hover { border-color: var(--gold); box-shadow: var(--shadow); transform: translateY(-4px); }
+    .service-card:hover { border-color: var(--blue); box-shadow: var(--shadow); transform: translateY(-4px); }
     .service-card:hover::before { transform: scaleX(1); }
     .service-icon {
-      width: 52px; height: 52px;
-      border-radius: 12px;
-      background: rgba(201,153,42,.1);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.5rem;
-      margin-bottom: 1.25rem;
+      width: 52px; height: 52px; border-radius: 12px;
+      background: var(--blue-pale);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.5rem; margin-bottom: 1.25rem;
     }
-    .service-title {
-      font-size: 1.15rem;
-      font-weight: 700;
-      color: var(--navy);
-      margin-bottom: .6rem;
-    }
+    .service-title { font-size: 1.1rem; font-weight: 700; color: var(--navy); margin-bottom: .6rem; }
     .service-desc { font-size: .9rem; color: var(--slate); line-height: 1.6; }
-    .service-items {
-      margin-top: 1rem;
-      display: flex;
-      flex-wrap: wrap;
-      gap: .4rem;
-    }
-    .service-item {
-      background: var(--mist);
-      border-radius: 50px;
-      padding: .25rem .75rem;
-      font-size: .75rem;
-      font-weight: 600;
-      color: var(--navy);
-    }
+    .service-items { margin-top: 1rem; display: flex; flex-wrap: wrap; gap: .4rem; }
+    .service-item { background: var(--mist); border-radius: 50px; padding: .25rem .75rem; font-size: .75rem; font-weight: 600; color: var(--navy); }
 
     /* ── Why Hurukuro ── */
     #why { background: var(--navy); }
-    .why-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 4rem;
-      align-items: center;
-    }
-    .why-content .section-sub.light { max-width: 100%; }
+    .why-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
     .why-points { margin-top: 2.5rem; display: flex; flex-direction: column; gap: 1.5rem; }
-    .why-point {
-      display: flex;
-      gap: 1rem;
-      align-items: flex-start;
-    }
+    .why-point { display: flex; gap: 1rem; align-items: flex-start; }
     .why-num {
-      flex-shrink: 0;
-      width: 36px; height: 36px;
-      border-radius: 50%;
-      background: rgba(201,153,42,.2);
-      border: 1px solid rgba(201,153,42,.4);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: .8rem;
-      font-weight: 800;
-      color: var(--gold);
+      flex-shrink: 0; width: 36px; height: 36px; border-radius: 50%;
+      background: rgba(37,99,235,.2); border: 1px solid rgba(37,99,235,.4);
+      display: flex; align-items: center; justify-content: center;
+      font-size: .8rem; font-weight: 800; color: var(--blue-lt);
     }
     .why-point-title { font-size: 1rem; font-weight: 700; color: var(--white); margin-bottom: .25rem; }
-    .why-point-text { font-size: .9rem; color: rgba(255,255,255,.6); }
+    .why-point-text { font-size: .9rem; color: rgba(255,255,255,.58); }
     .why-cards { display: flex; flex-direction: column; gap: 1.25rem; }
     .why-card {
-      background: rgba(255,255,255,.05);
-      border: 1px solid rgba(255,255,255,.1);
-      border-radius: 14px;
-      padding: 1.5rem;
+      background: rgba(255,255,255,.04);
+      border: 1px solid rgba(255,255,255,.09);
+      border-radius: 14px; padding: 1.5rem;
       transition: var(--transition);
     }
-    .why-card:hover { background: rgba(201,153,42,.1); border-color: rgba(201,153,42,.3); }
-    .why-card-head {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin-bottom: .6rem;
-    }
+    .why-card:hover { background: rgba(37,99,235,.12); border-color: rgba(37,99,235,.35); }
+    .why-card-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: .6rem; }
     .why-card-title { font-size: 1rem; font-weight: 700; color: var(--white); }
     .why-card-badge {
-      background: rgba(201,153,42,.2);
-      color: var(--gold);
-      font-size: .7rem;
-      font-weight: 700;
-      letter-spacing: .06em;
-      text-transform: uppercase;
-      padding: .25rem .65rem;
-      border-radius: 50px;
+      background: rgba(37,99,235,.2); color: var(--blue-lt);
+      font-size: .7rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase;
+      padding: .25rem .65rem; border-radius: 50px;
     }
-    .why-card-text { font-size: .875rem; color: rgba(255,255,255,.6); }
+    .why-card-text { font-size: .875rem; color: rgba(255,255,255,.58); }
 
-    /* ── Market Opportunity ── */
+    /* ── Market ── */
     #market { background: var(--off-white); }
     .market-header { text-align: center; max-width: 680px; margin: 0 auto 3.5rem; }
     .market-header .section-sub { margin-inline: auto; }
-    .market-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 1.5rem;
-    }
+    .market-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
     .market-card {
-      background: var(--white);
-      border-radius: 16px;
-      padding: 2rem;
+      background: var(--white); border-radius: 16px; padding: 2rem;
       border: 1.5px solid transparent;
       box-shadow: 0 2px 12px rgba(0,0,0,.04);
       transition: var(--transition);
     }
-    .market-card:hover { border-color: var(--gold); transform: translateY(-3px); box-shadow: var(--shadow); }
-    .market-card-num {
-      font-size: 3rem;
-      font-weight: 900;
-      color: rgba(201,153,42,.2);
-      line-height: 1;
-      margin-bottom: .75rem;
-    }
-    .market-card-title {
-      font-size: 1.05rem;
-      font-weight: 700;
-      color: var(--navy);
-      margin-bottom: .5rem;
-    }
+    .market-card:hover { border-color: var(--blue); transform: translateY(-3px); box-shadow: var(--shadow); }
+    .market-card-num { font-size: 3rem; font-weight: 900; color: rgba(37,99,235,.18); line-height: 1; margin-bottom: .75rem; }
+    .market-card-title { font-size: 1.05rem; font-weight: 700; color: var(--navy); margin-bottom: .5rem; }
     .market-card-text { font-size: .9rem; color: var(--slate); }
 
-    /* ── Proof / Results ── */
-    #proof {
-      background: linear-gradient(135deg, var(--navy) 0%, #0D1F3C 100%);
-      text-align: center;
-    }
+    /* ── Proof ── */
+    #proof { background: linear-gradient(135deg, var(--navy) 0%, #0D1F3C 100%); text-align: center; }
     .proof-header { max-width: 600px; margin: 0 auto 3.5rem; }
-    .proof-stats {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-      gap: 2rem;
-      margin-bottom: 4rem;
-    }
+    .proof-stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 2rem; margin-bottom: 4rem; }
     .proof-stat {
       padding: 2rem 1rem;
-      background: rgba(255,255,255,.04);
-      border: 1px solid rgba(255,255,255,.08);
-      border-radius: 14px;
-      transition: var(--transition);
+      background: rgba(255,255,255,.04); border: 1px solid rgba(255,255,255,.08);
+      border-radius: 14px; transition: var(--transition);
     }
-    .proof-stat:hover { background: rgba(201,153,42,.1); border-color: rgba(201,153,42,.3); }
-    .proof-stat-val {
-      font-size: 2.75rem;
-      font-weight: 900;
-      color: var(--gold);
-      line-height: 1;
-    }
-    .proof-stat-lbl {
-      font-size: .85rem;
-      color: rgba(255,255,255,.6);
-      margin-top: .5rem;
-      line-height: 1.4;
-    }
-    .testimonial-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 1.5rem;
-      text-align: left;
-    }
+    .proof-stat:hover { background: rgba(37,99,235,.14); border-color: rgba(37,99,235,.35); }
+    .proof-stat-val { font-size: 2.75rem; font-weight: 900; color: var(--blue-lt); line-height: 1; }
+    .proof-stat-lbl { font-size: .85rem; color: rgba(255,255,255,.55); margin-top: .5rem; line-height: 1.4; }
+    .testimonial-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: 1.5rem; text-align: left; }
     .testimonial {
-      background: rgba(255,255,255,.05);
-      border: 1px solid rgba(255,255,255,.1);
-      border-radius: 16px;
-      padding: 2rem;
+      background: rgba(255,255,255,.05); border: 1px solid rgba(255,255,255,.09);
+      border-radius: 16px; padding: 2rem;
     }
-    .testimonial-quote {
-      font-size: 1.05rem;
-      color: rgba(255,255,255,.85);
-      line-height: 1.65;
-      margin-bottom: 1.5rem;
-      font-style: italic;
-    }
-    .testimonial-quote::before { content: '\201C'; color: var(--gold); font-size: 2rem; line-height: 0; vertical-align: -.4em; margin-right: .2rem; }
+    .testimonial-quote { font-size: 1rem; color: rgba(255,255,255,.82); line-height: 1.65; margin-bottom: 1.5rem; font-style: italic; }
+    .testimonial-quote::before { content: '\201C'; color: var(--blue-lt); font-size: 2rem; line-height: 0; vertical-align: -.4em; margin-right: .2rem; }
     .testimonial-author { display: flex; align-items: center; gap: .75rem; }
     .author-avatar {
-      width: 44px; height: 44px;
-      border-radius: 50%;
-      background: linear-gradient(135deg, var(--gold), var(--gold-lt));
+      width: 44px; height: 44px; border-radius: 50%;
+      background: linear-gradient(135deg, var(--blue), var(--blue-lt));
       display: flex; align-items: center; justify-content: center;
-      font-weight: 800; font-size: .9rem; color: var(--navy);
+      font-weight: 800; font-size: .85rem; color: var(--white);
     }
     .author-name { font-size: .9rem; font-weight: 700; color: var(--white); }
-    .author-role { font-size: .78rem; color: rgba(255,255,255,.5); }
+    .author-role { font-size: .78rem; color: rgba(255,255,255,.45); }
 
     /* ── Team ── */
     #team { background: var(--white); }
     .team-header { text-align: center; max-width: 620px; margin: 0 auto 3.5rem; }
-    .team-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-      gap: 1.5rem;
-    }
+    .team-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(175px, 1fr)); gap: 1.5rem; }
     .team-card {
-      text-align: center;
-      padding: 1.75rem 1rem;
-      border-radius: 16px;
-      border: 1.5px solid var(--mist);
+      text-align: center; padding: 1.75rem 1rem;
+      border-radius: 16px; border: 1.5px solid #E2E8F0;
       transition: var(--transition);
     }
-    .team-card:hover { border-color: var(--gold); box-shadow: var(--shadow); transform: translateY(-4px); }
+    .team-card:hover { border-color: var(--blue); box-shadow: var(--shadow); transform: translateY(-4px); }
     .team-avatar {
-      width: 80px; height: 80px;
-      border-radius: 50%;
+      width: 80px; height: 80px; border-radius: 50%;
       background: linear-gradient(135deg, var(--navy), var(--navy-mid));
       display: flex; align-items: center; justify-content: center;
-      font-size: 1.4rem; font-weight: 900; color: var(--gold);
+      font-size: 1.3rem; font-weight: 900; color: var(--blue-lt);
       margin: 0 auto 1rem;
     }
     .team-name { font-size: .95rem; font-weight: 700; color: var(--navy); }
@@ -621,247 +488,177 @@
     /* ── Partners ── */
     #partners { background: var(--off-white); }
     .partners-header { text-align: center; max-width: 560px; margin: 0 auto 3rem; }
-    .partners-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 1.5rem;
-    }
+    .partners-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.5rem; }
     .partner-card {
-      background: var(--white);
-      border-radius: 14px;
-      padding: 1.75rem;
+      background: var(--white); border-radius: 14px; padding: 1.75rem;
       border: 1.5px solid transparent;
-      box-shadow: 0 2px 10px rgba(0,0,0,.04);
-      transition: var(--transition);
+      box-shadow: 0 2px 10px rgba(0,0,0,.04); transition: var(--transition);
     }
-    .partner-card:hover { border-color: var(--gold); box-shadow: var(--shadow); }
+    .partner-card:hover { border-color: var(--blue); box-shadow: var(--shadow); }
     .partner-name { font-size: 1rem; font-weight: 800; color: var(--navy); margin-bottom: .5rem; }
     .partner-desc { font-size: .875rem; color: var(--slate); }
 
-    /* ── CTA ── */
-    #cta {
-      background: var(--gold);
-      padding: 5rem 0;
-      text-align: center;
-    }
-    .cta-title {
-      font-size: clamp(2rem, 4vw, 3rem);
-      font-weight: 900;
-      color: var(--navy);
-      line-height: 1.15;
-      margin-bottom: 1rem;
-    }
-    .cta-sub { font-size: 1.1rem; color: rgba(10,22,40,.7); margin-bottom: 2.5rem; }
+    /* ── CTA Banner ── */
+    #cta { background: var(--blue); padding: 5rem 0; text-align: center; }
+    .cta-title { font-size: clamp(2rem, 4vw, 3rem); font-weight: 900; color: var(--white); line-height: 1.15; margin-bottom: 1rem; }
+    .cta-sub { font-size: 1.1rem; color: rgba(255,255,255,.82); margin-bottom: 2.5rem; }
     .cta-actions { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
-    .btn-cta-primary {
-      background: var(--navy);
-      color: var(--white);
-      padding: 1rem 2.5rem;
-      font-size: 1.05rem;
-    }
-    .btn-cta-primary:hover { background: var(--navy-mid); transform: translateY(-3px); box-shadow: 0 12px 30px rgba(10,22,40,.3); }
-    .btn-cta-outline {
-      background: transparent;
-      color: var(--navy);
-      border: 2px solid var(--navy);
-      padding: 1rem 2.5rem;
-      font-size: 1.05rem;
-    }
-    .btn-cta-outline:hover { background: var(--navy); color: var(--white); transform: translateY(-3px); }
-
-    /* ── Contact ── */
-    #contact { background: var(--navy); padding: 5rem 0 3rem; }
-    .contact-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 4rem;
-      margin-bottom: 4rem;
-    }
-    .contact-info .section-title.light { margin-bottom: 1rem; }
-    .contact-details { margin-top: 2rem; display: flex; flex-direction: column; gap: 1rem; }
-    .contact-item {
-      display: flex;
-      align-items: flex-start;
-      gap: .75rem;
-      color: rgba(255,255,255,.75);
-      font-size: .95rem;
-    }
-    .contact-icon {
-      flex-shrink: 0;
-      width: 36px; height: 36px;
-      border-radius: 8px;
-      background: rgba(201,153,42,.15);
-      display: flex; align-items: center; justify-content: center;
-      font-size: 1rem;
-      margin-top: .1rem;
-    }
-    .contact-item-label { font-size: .75rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--gold); margin-bottom: .2rem; }
-    .offices-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: .75rem;
-      margin-top: 1.5rem;
-    }
-    .office {
-      background: rgba(255,255,255,.04);
-      border: 1px solid rgba(255,255,255,.08);
-      border-radius: 10px;
-      padding: .875rem 1rem;
-    }
-    .office-city { font-size: .85rem; font-weight: 700; color: var(--gold); margin-bottom: .2rem; }
-    .office-addr { font-size: .78rem; color: rgba(255,255,255,.5); line-height: 1.4; }
-    .contact-form {
-      background: rgba(255,255,255,.04);
-      border: 1px solid rgba(255,255,255,.1);
-      border-radius: 16px;
-      padding: 2.5rem;
-    }
-    .form-title { font-size: 1.3rem; font-weight: 700; color: var(--white); margin-bottom: .5rem; }
-    .form-sub { font-size: .875rem; color: rgba(255,255,255,.5); margin-bottom: 1.75rem; }
-    .form-group { margin-bottom: 1.25rem; }
-    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
-    label { display: block; font-size: .8rem; font-weight: 600; color: rgba(255,255,255,.6); margin-bottom: .4rem; letter-spacing: .04em; text-transform: uppercase; }
-    input, textarea, select {
-      width: 100%;
-      background: rgba(255,255,255,.06);
-      border: 1px solid rgba(255,255,255,.15);
-      border-radius: var(--radius);
-      padding: .75rem 1rem;
-      color: var(--white);
-      font-size: .95rem;
-      font-family: inherit;
-      transition: border-color var(--transition);
-      outline: none;
-    }
-    input::placeholder, textarea::placeholder { color: rgba(255,255,255,.3); }
-    input:focus, textarea:focus, select:focus { border-color: var(--gold); background: rgba(255,255,255,.08); }
-    select option { background: var(--navy); }
-    textarea { resize: vertical; min-height: 100px; }
-    .btn-submit {
-      width: 100%;
-      background: var(--gold);
-      color: var(--navy);
-      padding: 1rem;
-      font-size: 1rem;
-      font-weight: 800;
-      border-radius: var(--radius);
-      cursor: pointer;
-      border: none;
+    .btn-cta-wa {
+      background: var(--wa-green); color: var(--white);
+      padding: 1rem 2.5rem; font-size: 1.05rem; font-weight: 800;
+      border-radius: 50px; border: none; cursor: pointer;
+      display: inline-flex; align-items: center; gap: .6rem;
       transition: var(--transition);
     }
-    .btn-submit:hover { background: var(--gold-lt); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(201,153,42,.4); }
-    .form-footer { font-size: .75rem; color: rgba(255,255,255,.35); text-align: center; margin-top: .75rem; }
+    .btn-cta-wa:hover { background: #1ebe5d; transform: translateY(-3px); box-shadow: 0 12px 30px rgba(37,211,102,.4); }
+    .btn-cta-outline {
+      background: transparent; color: var(--white);
+      border: 2px solid rgba(255,255,255,.55);
+      padding: 1rem 2.5rem; font-size: 1.05rem; font-weight: 700;
+      border-radius: 50px; display: inline-flex; align-items: center; gap: .5rem;
+      transition: var(--transition);
+    }
+    .btn-cta-outline:hover { border-color: var(--white); background: rgba(255,255,255,.1); transform: translateY(-3px); }
+
+    /* ── Contact ── */
+    #contact { background: var(--navy); padding: 5rem 0; }
+    .contact-wrap { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
+    .contact-left .section-sub.light { margin-top: 1rem; }
+    .contact-details { margin-top: 2rem; display: flex; flex-direction: column; gap: 1rem; }
+    .contact-item { display: flex; align-items: flex-start; gap: .75rem; }
+    .contact-icon {
+      flex-shrink: 0; width: 38px; height: 38px; border-radius: 10px;
+      background: rgba(37,99,235,.18);
+      display: flex; align-items: center; justify-content: center; font-size: 1.1rem;
+    }
+    .contact-item-label { font-size: .72rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--blue-lt); margin-bottom: .15rem; }
+    .contact-item-val { font-size: .95rem; color: rgba(255,255,255,.78); }
+    .contact-item-val a { color: rgba(255,255,255,.78); transition: color var(--transition); }
+    .contact-item-val a:hover { color: var(--blue-lt); }
+    .offices-grid { display: grid; grid-template-columns: 1fr 1fr; gap: .75rem; margin-top: 2rem; }
+    .office { background: rgba(255,255,255,.04); border: 1px solid rgba(255,255,255,.08); border-radius: 10px; padding: .875rem 1rem; }
+    .office-city { font-size: .85rem; font-weight: 700; color: var(--blue-lt); margin-bottom: .2rem; }
+    .office-addr { font-size: .78rem; color: rgba(255,255,255,.45); line-height: 1.4; }
+    /* WhatsApp CTA card */
+    .wa-card {
+      background: rgba(255,255,255,.05);
+      border: 1px solid rgba(255,255,255,.1);
+      border-radius: 20px;
+      padding: 3rem 2.5rem;
+      text-align: center;
+    }
+    .wa-card-icon {
+      width: 80px; height: 80px; border-radius: 50%;
+      background: var(--wa-green);
+      display: flex; align-items: center; justify-content: center;
+      margin: 0 auto 1.5rem;
+      box-shadow: 0 8px 28px rgba(37,211,102,.35);
+    }
+    .wa-card-icon svg { width: 42px; height: 42px; }
+    .wa-card-title { font-size: 1.5rem; font-weight: 800; color: var(--white); margin-bottom: .6rem; }
+    .wa-card-sub { font-size: .95rem; color: rgba(255,255,255,.6); margin-bottom: 2rem; line-height: 1.6; }
+    .wa-number {
+      display: inline-block;
+      font-size: 1.3rem; font-weight: 900; color: var(--white);
+      letter-spacing: .04em; margin-bottom: 2rem;
+    }
+    .btn-wa-large {
+      display: inline-flex; align-items: center; gap: .75rem;
+      background: var(--wa-green); color: var(--white);
+      font-size: 1.1rem; font-weight: 800;
+      padding: 1.1rem 2.75rem; border-radius: 50px;
+      transition: var(--transition);
+      width: 100%; justify-content: center;
+    }
+    .btn-wa-large:hover { background: #1ebe5d; transform: translateY(-3px); box-shadow: 0 12px 32px rgba(37,211,102,.45); }
+    .wa-card-note { font-size: .78rem; color: rgba(255,255,255,.3); margin-top: 1rem; }
 
     /* ── Footer ── */
-    footer {
-      background: #060F1D;
-      padding: 2rem 0;
-    }
-    .footer-inner {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      gap: 1rem;
-    }
-    .footer-copy { font-size: .8rem; color: rgba(255,255,255,.35); }
+    footer { background: #070F1D; padding: 2rem 0; }
+    .footer-inner { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; }
+    .footer-copy { font-size: .8rem; color: rgba(255,255,255,.3); }
     .footer-links { display: flex; gap: 1.5rem; }
-    .footer-links a { font-size: .8rem; color: rgba(255,255,255,.4); transition: color var(--transition); }
-    .footer-links a:hover { color: var(--gold); }
-
-    /* ── Scroll Progress ── */
-    #progress {
-      position: fixed;
-      top: 0; left: 0;
-      height: 3px;
-      background: var(--gold);
-      z-index: 200;
-      transition: width .1s linear;
-    }
+    .footer-links a { font-size: .8rem; color: rgba(255,255,255,.35); transition: color var(--transition); }
+    .footer-links a:hover { color: var(--blue-lt); }
 
     /* ── Responsive ── */
     @media (max-width: 900px) {
-      .hero-grid, .why-grid, .contact-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+      .hero-grid, .why-grid, .contact-wrap { grid-template-columns: 1fr; gap: 2.5rem; }
       .hero-visual { display: none; }
-      .nav-links, .nav-cta { display: none; }
+      .nav-links { display: none; }
       .hamburger { display: flex; }
     }
     @media (max-width: 600px) {
       section { padding: 3.5rem 0; }
       .hero-stats { gap: 1.5rem; }
       .stat-val { font-size: 1.5rem; }
-      .form-row { grid-template-columns: 1fr; }
       .offices-grid { grid-template-columns: 1fr; }
       .footer-inner { flex-direction: column; text-align: center; }
     }
 
-    /* ── Mobile Nav ── */
-    .mobile-nav {
-      display: none;
-      position: fixed;
-      inset: 0;
-      background: var(--navy);
-      z-index: 99;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 2rem;
-    }
-    .mobile-nav.open { display: flex; }
-    .mobile-nav a {
-      font-size: 1.5rem;
-      font-weight: 700;
-      color: var(--white);
-      transition: color var(--transition);
-    }
-    .mobile-nav a:hover { color: var(--gold); }
-    .mobile-close {
-      position: absolute;
-      top: 1.5rem; right: 1.5rem;
-      background: none;
-      border: none;
-      color: var(--white);
-      font-size: 2rem;
-      cursor: pointer;
+    /* ── Entrance animation ── */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to   { opacity: 1; transform: translateY(0); }
     }
   </style>
 </head>
 <body>
 
-<!-- Scroll progress bar -->
-<div id="progress"></div>
+<!-- Scroll progress -->
+<div id="progress" role="progressbar" aria-label="Page scroll progress"></div>
 
-<!-- Mobile Nav Overlay -->
+<!-- Floating WhatsApp button -->
+<a id="wa-float" href="https://wa.me/27665175459?text=Hi%20Hurukuro%2C%20I%27d%20like%20to%20discuss%20a%20brand%20strategy%20project." target="_blank" rel="noopener noreferrer" aria-label="Chat with us on WhatsApp">
+  <span class="wa-tooltip">Chat with us</span>
+  <svg viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+  </svg>
+</a>
+
+<!-- Mobile nav -->
 <div class="mobile-nav" id="mobileNav" role="dialog" aria-modal="true" aria-label="Navigation menu">
   <button class="mobile-close" id="mobileClose" aria-label="Close menu">&#x2715;</button>
   <a href="#services" onclick="closeMobile()">Services</a>
   <a href="#why" onclick="closeMobile()">Why Us</a>
   <a href="#market" onclick="closeMobile()">Our Market</a>
   <a href="#team" onclick="closeMobile()">Team</a>
-  <a href="#contact" onclick="closeMobile()">Contact</a>
-  <a href="#contact" class="btn btn-primary" onclick="closeMobile()">Free Consultation</a>
+  <a href="#contact" onclick="closeMobile()" class="btn btn-wa" style="padding:.75rem 1.75rem;">WhatsApp Us</a>
 </div>
 
-<!-- Navigation -->
+<!-- ══ NAV ══ -->
 <nav id="nav" role="navigation" aria-label="Main navigation">
   <div class="container nav-inner">
-    <a href="#hero" class="nav-logo" aria-label="Hurukuro Communications home">
-      <!-- Replace src with your actual logo file e.g. assets/logo.png -->
-      <img src="assets/logo.png" alt="Hurukuro Communications" class="logo-img"
-           onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
-      <svg class="logo-svg" style="display:none" viewBox="0 0 160 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <rect x="0" y="4" width="40" height="40" rx="8" fill="#C9992A"/>
-        <text x="7" y="33" font-family="'Segoe UI',sans-serif" font-weight="900" font-size="24" fill="#0A1628">HC</text>
-        <text x="50" y="22" font-family="'Segoe UI',sans-serif" font-weight="900" font-size="13" fill="#FFFFFF" letter-spacing="1">HURUKURO</text>
-        <text x="50" y="38" font-family="'Segoe UI',sans-serif" font-weight="400" font-size="10" fill="#C9992A" letter-spacing="2">COMMUNICATIONS</text>
+
+    <!-- Logo: dark-bg variant (white bars + white text) embedded as inline SVG -->
+    <a href="#hero" aria-label="Hurukuro home">
+      <svg width="210" height="50" viewBox="0 0 210 50" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Hurukuro Digital Performance logo" role="img">
+        <!-- Bar chart icon -->
+        <circle cx="9"  cy="44" r="5.5" fill="#2563EB"/>
+        <rect x="17"  y="30" width="11" height="16" rx="5.5" fill="#2563EB"/>
+        <rect x="31"  y="10" width="11" height="36" rx="5.5" fill="#FFFFFF"/>
+        <rect x="45"  y="20" width="11" height="26" rx="5.5" fill="#FFFFFF" opacity=".55"/>
+        <circle cx="61" cy="44" r="5.5" fill="#FFFFFF" opacity=".55"/>
+        <!-- Wordmark -->
+        <text x="76" y="26" font-family="'Segoe UI',Arial,sans-serif" font-weight="800" font-size="18" fill="#FFFFFF" letter-spacing="3">HURUKURO</text>
+        <text x="77" y="42" font-family="'Segoe UI',Arial,sans-serif" font-weight="500" font-size="9.5" fill="#60A5FA" letter-spacing="4">DIGITAL PERFORMANCE</text>
       </svg>
     </a>
+
     <ul class="nav-links" role="list">
       <li><a href="#services">Services</a></li>
       <li><a href="#why">Why Us</a></li>
       <li><a href="#market">Our Market</a></li>
       <li><a href="#team">Team</a></li>
-      <li><a href="#contact" class="btn btn-primary nav-cta" style="padding:.6rem 1.4rem;font-size:.88rem;">Free Consultation</a></li>
+      <li>
+        <a href="https://wa.me/27665175459?text=Hi%20Hurukuro%2C%20I%27d%20like%20to%20discuss%20a%20brand%20project."
+           target="_blank" rel="noopener noreferrer"
+           class="btn btn-wa" style="padding:.6rem 1.4rem;font-size:.88rem;">
+          <!-- WhatsApp icon mini -->
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          WhatsApp Us
+        </a>
+      </li>
     </ul>
     <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
       <span></span><span></span><span></span>
@@ -873,7 +670,7 @@
 <section id="hero" aria-labelledby="hero-heading">
   <div class="container">
     <div class="hero-grid">
-      <div class="hero-content">
+      <div>
         <div class="hero-eyebrow">Pan-African Marketing Agency · Est. 2009</div>
         <h1 class="hero-title" id="hero-heading">
           Your Strategic<br/>Partner for<br/><span>Success Stories</span>
@@ -882,29 +679,19 @@
           We transform brands into market leaders across Africa and beyond — through data-driven strategy, compelling creative, and 360° brand empowerment that delivers measurable growth.
         </p>
         <div class="hero-actions">
-          <a href="#contact" class="btn btn-primary" aria-label="Get a free brand strategy consultation">
-            Get a Free Consultation
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/><path d="M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <a href="https://wa.me/27665175459?text=Hi%20Hurukuro%2C%20I%27d%20like%20a%20free%20brand%20strategy%20consultation."
+             target="_blank" rel="noopener noreferrer"
+             class="btn btn-wa" aria-label="Start a WhatsApp conversation with Hurukuro">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Start on WhatsApp
           </a>
           <a href="#services" class="btn btn-outline">View Our Services</a>
         </div>
         <div class="hero-stats" role="list" aria-label="Key statistics">
-          <div role="listitem">
-            <div class="stat-val">15+</div>
-            <div class="stat-lbl">Years of<br/>Excellence</div>
-          </div>
-          <div role="listitem">
-            <div class="stat-val">4</div>
-            <div class="stat-lbl">Global<br/>Offices</div>
-          </div>
-          <div role="listitem">
-            <div class="stat-val">360°</div>
-            <div class="stat-lbl">Brand<br/>Solutions</div>
-          </div>
-          <div role="listitem">
-            <div class="stat-val">20+</div>
-            <div class="stat-lbl">Industry<br/>Experts</div>
-          </div>
+          <div role="listitem"><div class="stat-val">15+</div><div class="stat-lbl">Years of<br/>Excellence</div></div>
+          <div role="listitem"><div class="stat-val">4</div><div class="stat-lbl">Global<br/>Offices</div></div>
+          <div role="listitem"><div class="stat-val">360°</div><div class="stat-lbl">Brand<br/>Solutions</div></div>
+          <div role="listitem"><div class="stat-val">20+</div><div class="stat-lbl">Industry<br/>Experts</div></div>
         </div>
       </div>
       <div class="hero-visual" aria-hidden="true">
@@ -912,7 +699,7 @@
           <div class="h-card h-card-main">
             <div class="card-icon">🌍</div>
             <div class="card-label">Global Reach</div>
-            <div class="card-value">Pan-African<br/>Expertise</div>
+            <div class="card-value">Pan-African<br/>Digital Performance</div>
             <ul class="services-list" role="list">
               <li><span class="dot"></span>Brand Strategy &amp; Identity</li>
               <li><span class="dot"></span>Digital &amp; Social Media</li>
@@ -922,12 +709,12 @@
           </div>
           <div class="h-card h-card-float top-right">
             <div class="card-label">Trusted By</div>
-            <div class="card-value" style="font-size:1rem;">Samsung Africa<br/>Standard Bank<br/>MultiChoice</div>
+            <div class="card-value" style="font-size:.95rem;line-height:1.5;">Samsung Africa<br/>Standard Bank<br/>MultiChoice</div>
           </div>
           <div class="h-card h-card-float bottom-left">
-            <div class="card-icon" style="font-size:1.25rem;">📍</div>
+            <div class="card-icon" style="font-size:1.2rem;">📍</div>
             <div class="card-label">Offices</div>
-            <div class="card-sub" style="color:rgba(255,255,255,.75);font-size:.8rem;">SA · Botswana · Sweden · London</div>
+            <div class="card-sub" style="color:rgba(255,255,255,.75);font-size:.8rem;margin-top:.2rem;">SA · Botswana · Sweden · London</div>
           </div>
         </div>
       </div>
@@ -935,12 +722,12 @@
   </div>
 </section>
 
-<!-- ══════════════════ CLIENT BAR ══════════════════ -->
-<section id="clients" aria-label="Client partners">
+<!-- ══ CLIENT BAR ══ -->
+<section id="clients" aria-label="Trusted client partners">
   <div class="container">
     <div class="clients-inner">
       <span class="clients-label">Trusted by</span>
-      <div class="clients-logos" role="list" aria-label="Notable clients">
+      <div class="clients-logos" role="list">
         <span class="client-name" role="listitem">Samsung Africa</span>
         <span class="client-name" role="listitem">Standard Bank</span>
         <span class="client-name" role="listitem">MultiChoice</span>
@@ -951,7 +738,7 @@
   </div>
 </section>
 
-<!-- ══════════════════ SERVICES ══════════════════ -->
+<!-- ══ SERVICES ══ -->
 <section id="services" aria-labelledby="services-heading">
   <div class="container">
     <div class="services-header">
@@ -1024,12 +811,12 @@
   </div>
 </section>
 
-<!-- ══════════════════ WHY HURUKURO ══════════════════ -->
+<!-- ══ WHY HURUKURO ══ -->
 <section id="why" aria-labelledby="why-heading">
   <div class="container">
     <div class="why-grid">
-      <div class="why-content">
-        <span class="tag">The Hurukuro Advantage</span>
+      <div>
+        <span class="tag light">The Hurukuro Advantage</span>
         <h2 class="section-title light" id="why-heading">The Competitive Edge<br/>Your Brand Deserves</h2>
         <p class="section-sub light">Since 2009, we've been the driving force behind powerful Pan-African brands, combining global expertise with deep local knowledge.</p>
         <div class="why-points" role="list">
@@ -1051,12 +838,17 @@
             <div class="why-num" aria-hidden="true">03</div>
             <div>
               <div class="why-point-title">Cross-Industry Mastery</div>
-              <div class="why-point-text">Diverse portfolio spanning broadcasting, FMCG, finance, tourism, and more — we understand your specific industry challenges.</div>
+              <div class="why-point-text">A diverse portfolio spanning broadcasting, FMCG, finance, tourism and more — we understand your specific challenges.</div>
             </div>
           </div>
         </div>
         <div style="margin-top:2.5rem;">
-          <a href="#contact" class="btn btn-primary">Start Your Success Story</a>
+          <a href="https://wa.me/27665175459?text=Hi%20Hurukuro%2C%20I%27d%20like%20to%20start%20my%20success%20story."
+             target="_blank" rel="noopener noreferrer"
+             class="btn btn-wa">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Start Your Success Story
+          </a>
         </div>
       </div>
       <div class="why-cards">
@@ -1079,7 +871,7 @@
             <div class="why-card-title">🔄 End-to-End Solutions</div>
             <span class="why-card-badge">360° Service</span>
           </div>
-          <p class="why-card-text">From strategy to execution, we deliver comprehensive solutions tailored to your unique business objectives and market context.</p>
+          <p class="why-card-text">From strategy to execution, we deliver comprehensive solutions tailored to your unique business objectives.</p>
         </div>
         <div class="why-card">
           <div class="why-card-head">
@@ -1093,7 +885,7 @@
   </div>
 </section>
 
-<!-- ══════════════════ MARKET OPPORTUNITY ══════════════════ -->
+<!-- ══ MARKET ══ -->
 <section id="market" aria-labelledby="market-heading">
   <div class="container">
     <div class="market-header">
@@ -1105,12 +897,12 @@
       <article class="market-card" role="listitem">
         <div class="market-card-num" aria-hidden="true">01</div>
         <h3 class="market-card-title">Rapid Digital Transformation</h3>
-        <p class="market-card-text">Africa is experiencing a digital revolution, with internet penetration growing faster than any other region. Brands without a strong digital presence risk being left behind — permanently.</p>
+        <p class="market-card-text">Africa is experiencing a digital revolution with internet penetration growing faster than any other region. Brands without a strong digital presence risk being left behind — permanently.</p>
       </article>
       <article class="market-card" role="listitem">
         <div class="market-card-num" aria-hidden="true">02</div>
         <h3 class="market-card-title">Increasing Competition</h3>
-        <p class="market-card-text">Global brands are aggressively targeting emerging African markets. Local companies are becoming more sophisticated. Partnering with Hurukuro gives you the competitive edge to stand out.</p>
+        <p class="market-card-text">Global brands are aggressively targeting emerging African markets. Partnering with Hurukuro gives you the competitive edge to stand out in this crowded landscape.</p>
       </article>
       <article class="market-card" role="listitem">
         <div class="market-card-num" aria-hidden="true">03</div>
@@ -1120,7 +912,7 @@
       <article class="market-card" role="listitem">
         <div class="market-card-num" aria-hidden="true">04</div>
         <h3 class="market-card-title">Technological Leapfrogging</h3>
-        <p class="market-card-text">Africa is bypassing traditional development stages in favour of cutting-edge solutions. Hurukuro's innovative approach ensures your brand leverages these transformational technological jumps.</p>
+        <p class="market-card-text">Africa is bypassing traditional development stages in favour of cutting-edge solutions. Hurukuro ensures your brand leverages these transformational technological jumps effectively.</p>
       </article>
       <article class="market-card" role="listitem">
         <div class="market-card-num" aria-hidden="true">05</div>
@@ -1130,121 +922,73 @@
       <article class="market-card" role="listitem">
         <div class="market-card-num" aria-hidden="true">06</div>
         <h3 class="market-card-title">Post-Pandemic Rebound</h3>
-        <p class="market-card-text">As markets continue recovering and growing, there's a unique opportunity to reposition and grow. Our adaptive strategies help you navigate the changing landscape and emerge stronger.</p>
+        <p class="market-card-text">As markets continue recovering and growing, there's a unique opportunity to reposition and grow. Our adaptive strategies help you emerge stronger from the changing landscape.</p>
       </article>
     </div>
   </div>
 </section>
 
-<!-- ══════════════════ PROOF / RESULTS ══════════════════ -->
+<!-- ══ PROOF ══ -->
 <section id="proof" aria-labelledby="proof-heading">
   <div class="container">
     <div class="proof-header">
-      <span class="tag">Our Track Record</span>
+      <span class="tag light">Our Track Record</span>
       <h2 class="section-title light" id="proof-heading">Results That Speak<br/>For Themselves</h2>
       <p class="section-sub light">Over a decade of delivering measurable impact for brands across Africa and the globe.</p>
     </div>
     <div class="proof-stats" role="list" aria-label="Impact statistics">
-      <div class="proof-stat" role="listitem">
-        <div class="proof-stat-val">15+</div>
-        <div class="proof-stat-lbl">Years Driving<br/>Pan-African Brands</div>
-      </div>
-      <div class="proof-stat" role="listitem">
-        <div class="proof-stat-val">20+</div>
-        <div class="proof-stat-lbl">Industry Experts<br/>on Your Team</div>
-      </div>
-      <div class="proof-stat" role="listitem">
-        <div class="proof-stat-val">4</div>
-        <div class="proof-stat-lbl">Global Offices<br/>Across 3 Continents</div>
-      </div>
-      <div class="proof-stat" role="listitem">
-        <div class="proof-stat-val">360°</div>
-        <div class="proof-stat-lbl">Integrated<br/>Brand Solutions</div>
-      </div>
-      <div class="proof-stat" role="listitem">
-        <div class="proof-stat-val">∞</div>
-        <div class="proof-stat-lbl">Industries<br/>Served</div>
-      </div>
+      <div class="proof-stat" role="listitem"><div class="proof-stat-val">15+</div><div class="proof-stat-lbl">Years Driving<br/>Pan-African Brands</div></div>
+      <div class="proof-stat" role="listitem"><div class="proof-stat-val">20+</div><div class="proof-stat-lbl">Industry Experts<br/>on Your Team</div></div>
+      <div class="proof-stat" role="listitem"><div class="proof-stat-val">4</div><div class="proof-stat-lbl">Global Offices<br/>3 Continents</div></div>
+      <div class="proof-stat" role="listitem"><div class="proof-stat-val">360°</div><div class="proof-stat-lbl">Integrated<br/>Brand Solutions</div></div>
+      <div class="proof-stat" role="listitem"><div class="proof-stat-val">∞</div><div class="proof-stat-lbl">Industries<br/>Served</div></div>
     </div>
     <div class="testimonial-grid" role="list" aria-label="Client testimonials">
       <blockquote class="testimonial" role="listitem">
         <p class="testimonial-quote">Hurukuro's data-driven approach and deep understanding of the African market helped us connect authentically with our audience in ways we hadn't thought possible. Exceptional strategic thinking.</p>
         <footer class="testimonial-author">
           <div class="author-avatar" aria-hidden="true">SA</div>
-          <div>
-            <div class="author-name">Samsung Africa</div>
-            <div class="author-role">Brand Strategy Partner</div>
-          </div>
+          <div><div class="author-name">Samsung Africa</div><div class="author-role">Brand Strategy Partner</div></div>
         </footer>
       </blockquote>
       <blockquote class="testimonial" role="listitem">
         <p class="testimonial-quote">The team at Hurukuro brings an unparalleled combination of creative excellence and strategic rigour. They don't just execute campaigns — they transform how your brand is perceived.</p>
         <footer class="testimonial-author">
           <div class="author-avatar" aria-hidden="true">SB</div>
-          <div>
-            <div class="author-name">Standard Bank</div>
-            <div class="author-role">Communications Partner</div>
-          </div>
+          <div><div class="author-name">Standard Bank</div><div class="author-role">Communications Partner</div></div>
         </footer>
       </blockquote>
       <blockquote class="testimonial" role="listitem">
-        <p class="testimonial-quote">Working with Hurukuro means having a partner who truly understands your market, your audience and your ambitions. The results they deliver consistently exceed our expectations.</p>
+        <p class="testimonial-quote">Working with Hurukuro means having a partner who truly understands your market, your audience and your ambitions. The results they deliver consistently exceed expectations.</p>
         <footer class="testimonial-author">
           <div class="author-avatar" aria-hidden="true">MC</div>
-          <div>
-            <div class="author-name">MultiChoice</div>
-            <div class="author-role">Brand Activation Partner</div>
-          </div>
+          <div><div class="author-name">MultiChoice</div><div class="author-role">Brand Activation Partner</div></div>
         </footer>
       </blockquote>
     </div>
   </div>
 </section>
 
-<!-- ══════════════════ TEAM ══════════════════ -->
+<!-- ══ TEAM ══ -->
 <section id="team" aria-labelledby="team-heading">
   <div class="container">
     <div class="team-header">
       <span class="tag">Our Leadership</span>
       <h2 class="section-title" id="team-heading">Global Footprint,<br/>World-Class Expertise</h2>
-      <p class="section-sub" style="margin-inline:auto;">Our leadership team is a powerhouse of industry veterans spanning data analysis, strategy, creative, media, digital, journalism and production.</p>
+      <p class="section-sub" style="margin-inline:auto;">A powerhouse of industry veterans spanning data analysis, strategy, creative, media, digital, journalism and production.</p>
     </div>
     <div class="team-grid" role="list">
-      <article class="team-card" role="listitem">
-        <div class="team-avatar" aria-hidden="true">LN</div>
-        <div class="team-name">Lloyd Nyesvu</div>
-        <div class="team-role">Chief Executive Officer</div>
-      </article>
-      <article class="team-card" role="listitem">
-        <div class="team-avatar" aria-hidden="true">PW</div>
-        <div class="team-name">Patrick Wadula</div>
-        <div class="team-role">Head of PR &amp; Communications</div>
-      </article>
-      <article class="team-card" role="listitem">
-        <div class="team-avatar" aria-hidden="true">VS</div>
-        <div class="team-name">Vanessa Siwawa-Ndai</div>
-        <div class="team-role">Digital &amp; Social Lead</div>
-      </article>
-      <article class="team-card" role="listitem">
-        <div class="team-avatar" aria-hidden="true">LW</div>
-        <div class="team-name">Lamese Waterfield</div>
-        <div class="team-role">Head of Brand &amp; Design</div>
-      </article>
-      <article class="team-card" role="listitem">
-        <div class="team-avatar" aria-hidden="true">ED</div>
-        <div class="team-name">Earl Ashley Dube</div>
-        <div class="team-role">Creative Lead</div>
-      </article>
-      <article class="team-card" role="listitem">
-        <div class="team-avatar" aria-hidden="true">AS</div>
-        <div class="team-name">Andreas Shifotoka</div>
-        <div class="team-role">Head of Strategy &amp; Copywriting</div>
-      </article>
+      <article class="team-card" role="listitem"><div class="team-avatar" aria-hidden="true">LN</div><div class="team-name">Lloyd Nyesvu</div><div class="team-role">Chief Executive Officer</div></article>
+      <article class="team-card" role="listitem"><div class="team-avatar" aria-hidden="true">PW</div><div class="team-name">Patrick Wadula</div><div class="team-role">Head of PR &amp; Communications</div></article>
+      <article class="team-card" role="listitem"><div class="team-avatar" aria-hidden="true">VS</div><div class="team-name">Vanessa Siwawa-Ndai</div><div class="team-role">Digital &amp; Social Lead</div></article>
+      <article class="team-card" role="listitem"><div class="team-avatar" aria-hidden="true">LW</div><div class="team-name">Lamese Waterfield</div><div class="team-role">Head of Brand &amp; Design</div></article>
+      <article class="team-card" role="listitem"><div class="team-avatar" aria-hidden="true">ED</div><div class="team-name">Earl Ashley Dube</div><div class="team-role">Creative Lead</div></article>
+      <article class="team-card" role="listitem"><div class="team-avatar" aria-hidden="true">AS</div><div class="team-name">Andreas Shifotoka</div><div class="team-role">Head of Strategy &amp; Copywriting</div></article>
     </div>
   </div>
 </section>
 
-<!-- ══════════════════ PARTNERS ══════════════════ -->
+<!-- ══ PARTNERS ══ -->
 <section id="partners" aria-labelledby="partners-heading">
   <div class="container">
     <div class="partners-header">
@@ -1253,155 +997,113 @@
       <p class="section-sub" style="margin-inline:auto;">We bring together the most capable specialist partners to deliver solutions no single agency can match.</p>
     </div>
     <div class="partners-grid" role="list">
-      <article class="partner-card" role="listitem">
-        <div class="partner-name">Oxygen Media</div>
-        <p class="partner-desc">Award-winning full-service agency, recognised for innovative multi-platform strategies at the AMARA Awards.</p>
-      </article>
-      <article class="partner-card" role="listitem">
-        <div class="partner-name">Immersive Media</div>
-        <p class="partner-desc">Cutting-edge 3D/Anamorphic production and interactive mobile solutions that create unforgettable brand experiences.</p>
-      </article>
-      <article class="partner-card" role="listitem">
-        <div class="partner-name">Dinkum Data</div>
-        <p class="partner-desc">Specialist digital analytics — automated data collection, management and visualisation for actionable insights discovery.</p>
-      </article>
-      <article class="partner-card" role="listitem">
-        <div class="partner-name">Lifestyle Golf &amp; WPGA</div>
-        <p class="partner-desc">Women's Professional Golf Association — driving women's golf development, empowerment and lifestyle brand partnerships.</p>
-      </article>
+      <article class="partner-card" role="listitem"><div class="partner-name">Oxygen Media</div><p class="partner-desc">Award-winning full-service agency, recognised for innovative multi-platform strategies at the AMARA Awards.</p></article>
+      <article class="partner-card" role="listitem"><div class="partner-name">Immersive Media</div><p class="partner-desc">Cutting-edge 3D/Anamorphic production and interactive mobile solutions that create unforgettable brand experiences.</p></article>
+      <article class="partner-card" role="listitem"><div class="partner-name">Dinkum Data</div><p class="partner-desc">Specialist digital analytics — automated data collection, management and visualisation for actionable insights discovery.</p></article>
+      <article class="partner-card" role="listitem"><div class="partner-name">Lifestyle Golf &amp; WPGA</div><p class="partner-desc">Women's Professional Golf Association — driving women's golf development, empowerment and lifestyle brand partnerships.</p></article>
     </div>
   </div>
 </section>
 
-<!-- ══════════════════ CTA BANNER ══════════════════ -->
+<!-- ══ CTA BANNER ══ -->
 <section id="cta" aria-labelledby="cta-heading">
   <div class="container">
     <h2 class="cta-title" id="cta-heading">Ready to Craft Your<br/>Success Story?</h2>
-    <p class="cta-sub">Join Africa's leading brands who trust Hurukuro to deliver results that matter.</p>
+    <p class="cta-sub">Join Africa's leading brands who trust Hurukuro to deliver results that matter. Message us now — we respond fast.</p>
     <div class="cta-actions">
-      <a href="#contact" class="btn btn-cta-primary btn">Book a Free Strategy Session</a>
-      <a href="mailto:lloyd@hurukuro.co.za" class="btn btn-cta-outline btn">Email Us Directly</a>
+      <a href="https://wa.me/27665175459?text=Hi%20Hurukuro%2C%20I%27d%20like%20to%20book%20a%20free%20strategy%20session."
+         target="_blank" rel="noopener noreferrer" class="btn-cta-wa">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        WhatsApp for a Free Strategy Session
+      </a>
+      <a href="mailto:lloyd@hurukuro.co.za" class="btn-cta-outline">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        Email Us
+      </a>
     </div>
   </div>
 </section>
 
-<!-- ══════════════════ CONTACT ══════════════════ -->
+<!-- ══ CONTACT ══ -->
 <section id="contact" aria-labelledby="contact-heading">
   <div class="container">
-    <div class="contact-grid">
-      <div class="contact-info">
-        <span class="tag">Get In Touch</span>
+    <div class="contact-wrap">
+      <div class="contact-left">
+        <span class="tag light">Get In Touch</span>
         <h2 class="section-title light" id="contact-heading">Let's Start Your<br/>Journey to the Top</h2>
-        <p class="section-sub light">Tell us about your brand and your ambitions. Our strategists will craft a personalised plan to take you where you want to go.</p>
+        <p class="section-sub light">Tell us about your brand and your ambitions. Our team responds to every WhatsApp message within one business day.</p>
         <div class="contact-details">
           <div class="contact-item">
             <div class="contact-icon" aria-hidden="true">📞</div>
             <div>
-              <div class="contact-item-label">Phone</div>
-              <a href="tel:+27665175459" style="color:rgba(255,255,255,.75);">+27 66 517 5459</a>
+              <div class="contact-item-label">Phone / WhatsApp</div>
+              <div class="contact-item-val"><a href="tel:+27665175459">+27 66 517 5459</a></div>
             </div>
           </div>
           <div class="contact-item">
             <div class="contact-icon" aria-hidden="true">✉️</div>
             <div>
               <div class="contact-item-label">Email</div>
-              <a href="mailto:lloyd@hurukuro.co.za" style="color:rgba(255,255,255,.75);">lloyd@hurukuro.co.za</a>
+              <div class="contact-item-val"><a href="mailto:lloyd@hurukuro.co.za">lloyd@hurukuro.co.za</a></div>
             </div>
           </div>
         </div>
         <div class="offices-grid" role="list" aria-label="Our offices">
-          <div class="office" role="listitem">
-            <div class="office-city">🇿🇦 South Africa</div>
-            <div class="office-addr">11 Carrington Place, Pine Road, Broadacres, 2191</div>
-          </div>
-          <div class="office" role="listitem">
-            <div class="office-city">🇧🇼 Botswana</div>
-            <div class="office-addr">Block 10, Plot 66083, Setlhoa, Gaborone</div>
-          </div>
-          <div class="office" role="listitem">
-            <div class="office-city">🇸🇪 Sweden</div>
-            <div class="office-addr">Kantorsgatan 50, Uppsala, 754 24</div>
-          </div>
-          <div class="office" role="listitem">
-            <div class="office-city">🇬🇧 London</div>
-            <div class="office-addr">River Mill One, Station Road, London</div>
-          </div>
+          <div class="office" role="listitem"><div class="office-city">🇿🇦 South Africa</div><div class="office-addr">11 Carrington Place, Pine Road, Broadacres, 2191</div></div>
+          <div class="office" role="listitem"><div class="office-city">🇧🇼 Botswana</div><div class="office-addr">Block 10, Plot 66083, Setlhoa, Gaborone</div></div>
+          <div class="office" role="listitem"><div class="office-city">🇸🇪 Sweden</div><div class="office-addr">Kantorsgatan 50, Uppsala, 754 24</div></div>
+          <div class="office" role="listitem"><div class="office-city">🇬🇧 London</div><div class="office-addr">River Mill One, Station Road, London</div></div>
         </div>
       </div>
-      <div class="contact-form">
-        <div class="form-title">Book Your Free Strategy Session</div>
-        <div class="form-sub">No commitment. Just a focused conversation about your brand's potential.</div>
-        <form id="contactForm" novalidate aria-label="Contact form">
-          <div class="form-row">
-            <div class="form-group">
-              <label for="firstName">First Name</label>
-              <input type="text" id="firstName" name="firstName" placeholder="Jane" required autocomplete="given-name" />
-            </div>
-            <div class="form-group">
-              <label for="lastName">Last Name</label>
-              <input type="text" id="lastName" name="lastName" placeholder="Doe" required autocomplete="family-name" />
-            </div>
-          </div>
-          <div class="form-group">
-            <label for="email">Work Email</label>
-            <input type="email" id="email" name="email" placeholder="jane@company.com" required autocomplete="email" />
-          </div>
-          <div class="form-group">
-            <label for="company">Company</label>
-            <input type="text" id="company" name="company" placeholder="Your Company" autocomplete="organization" />
-          </div>
-          <div class="form-group">
-            <label for="service">Service of Interest</label>
-            <select id="service" name="service">
-              <option value="" disabled selected>Select a service…</option>
-              <option value="strategy">Brand Strategy</option>
-              <option value="creative">Creative &amp; Content</option>
-              <option value="digital">Digital &amp; Social</option>
-              <option value="pr">PR &amp; Activation</option>
-              <option value="full">Full 360° Solution</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="message">Tell Us About Your Brand</label>
-            <textarea id="message" name="message" placeholder="What are your biggest marketing challenges and goals?"></textarea>
-          </div>
-          <button type="submit" class="btn-submit" id="submitBtn">Book My Free Consultation →</button>
-          <p class="form-footer">We respond within one business day. Your information is private and never shared.</p>
-        </form>
+
+      <!-- WhatsApp CTA card replaces form -->
+      <div class="wa-card">
+        <div class="wa-card-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        </div>
+        <div class="wa-card-title">Chat With Us Directly</div>
+        <p class="wa-card-sub">No forms. No waiting. Open WhatsApp and speak directly with our team about your brand's next move.</p>
+        <div class="wa-number">+27 66 517 5459</div>
+        <a href="https://wa.me/27665175459?text=Hi%20Hurukuro%2C%20I%27d%20like%20to%20discuss%20a%20brand%20project%20with%20your%20team."
+           target="_blank" rel="noopener noreferrer" class="btn-wa-large">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Open WhatsApp Now
+        </a>
+        <p class="wa-card-note">Typically responds within a few hours during business hours.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ══════════════════ FOOTER ══════════════════ -->
+<!-- ══ FOOTER ══ -->
 <footer role="contentinfo">
   <div class="container">
     <div class="footer-inner">
-      <div class="footer-copy">© 2024 Hurukuro Communications. All rights reserved. · "Hurukuro" means discussion.</div>
-      <nav class="footer-links" aria-label="Footer links">
+      <div class="footer-copy">© 2024 Hurukuro. All rights reserved. · "Hurukuro" means discussion.</div>
+      <nav class="footer-links" aria-label="Footer navigation">
         <a href="#services">Services</a>
         <a href="#why">About</a>
         <a href="#team">Team</a>
-        <a href="mailto:lloyd@hurukuro.co.za">Contact</a>
+        <a href="https://wa.me/27665175459" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+        <a href="mailto:lloyd@hurukuro.co.za">Email</a>
       </nav>
     </div>
   </div>
 </footer>
 
 <script>
-  // Scroll progress bar
+  // Scroll progress + nav shrink
   const progress = document.getElementById('progress');
   const nav = document.getElementById('nav');
   window.addEventListener('scroll', () => {
-    const scrolled = window.scrollY / (document.body.scrollHeight - window.innerHeight);
-    progress.style.width = (scrolled * 100) + '%';
+    const pct = window.scrollY / (document.body.scrollHeight - window.innerHeight);
+    progress.style.width = (pct * 100) + '%';
     nav.classList.toggle('scrolled', window.scrollY > 60);
   }, { passive: true });
 
   // Mobile nav
   const hamburger = document.getElementById('hamburger');
   const mobileNav = document.getElementById('mobileNav');
-  const mobileClose = document.getElementById('mobileClose');
   hamburger.addEventListener('click', () => {
     mobileNav.classList.add('open');
     hamburger.setAttribute('aria-expanded', 'true');
@@ -1412,63 +1114,42 @@
     hamburger.setAttribute('aria-expanded', 'false');
     document.body.style.overflow = '';
   }
-  mobileClose.addEventListener('click', closeMobile);
+  document.getElementById('mobileClose').addEventListener('click', closeMobile);
 
-  // Form submission
-  const form = document.getElementById('contactForm');
-  const submitBtn = document.getElementById('submitBtn');
-  form.addEventListener('submit', (e) => {
-    e.preventDefault();
-    const firstName = document.getElementById('firstName').value.trim();
-    const email = document.getElementById('email').value.trim();
-    if (!firstName || !email) {
-      alert('Please fill in your name and email.');
-      return;
-    }
-    submitBtn.textContent = 'Sending…';
-    submitBtn.disabled = true;
-    // Replace with your actual form endpoint (e.g. Formspree, Netlify Forms, or custom API)
-    setTimeout(() => {
-      submitBtn.textContent = '✓ Message Sent — We\'ll be in touch!';
-      submitBtn.style.background = '#2d8a4e';
-      form.reset();
-    }, 1200);
-  });
-
-  // Smooth scroll active nav highlight
+  // Active nav highlight on scroll
   const sections = document.querySelectorAll('section[id]');
   const navLinks = document.querySelectorAll('.nav-links a[href^="#"]');
-  const observer = new IntersectionObserver((entries) => {
+  new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        const id = entry.target.id;
         navLinks.forEach(link => {
-          link.style.color = link.getAttribute('href') === '#' + id
-            ? 'var(--gold)'
-            : '';
+          link.style.color = link.getAttribute('href') === '#' + entry.target.id
+            ? 'var(--blue-lt)' : '';
         });
       }
     });
-  }, { threshold: 0.4 });
-  sections.forEach(s => observer.observe(s));
+  }, { threshold: 0.4 }).observe && sections.forEach(s =>
+    new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) navLinks.forEach(l =>
+          l.style.color = l.getAttribute('href') === '#' + entry.target.id ? 'var(--blue-lt)' : '');
+      });
+    }, { threshold: 0.4 }).observe(s)
+  );
 
-  // Entrance animations
-  const cards = document.querySelectorAll('.service-card, .market-card, .why-card, .team-card, .partner-card, .proof-stat');
-  const fadeIn = new IntersectionObserver((entries) => {
+  // Entrance fade-up animations
+  const animated = document.querySelectorAll(
+    '.service-card, .market-card, .why-card, .team-card, .partner-card, .proof-stat, .testimonial'
+  );
+  const io = new IntersectionObserver((entries) => {
     entries.forEach((entry, i) => {
       if (entry.isIntersecting) {
-        entry.target.style.animation = `fadeUp .5s ease ${i * 0.05}s both`;
-        fadeIn.unobserve(entry.target);
+        entry.target.style.animation = `fadeUp .5s ease ${(i % 6) * 0.07}s both`;
+        io.unobserve(entry.target);
       }
     });
   }, { threshold: 0.1 });
-  cards.forEach(c => fadeIn.observe(c));
+  animated.forEach(el => io.observe(el));
 </script>
-<style>
-  @keyframes fadeUp {
-    from { opacity: 0; transform: translateY(20px); }
-    to   { opacity: 1; transform: translateY(0); }
-  }
-</style>
 </body>
 </html>
