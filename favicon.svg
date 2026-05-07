@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 88 80">
+  <!-- dot left -->
+  <circle cx="7"  cy="73" r="7"  fill="#2563EB"/>
+  <!-- bar 2 medium blue -->
+  <rect   x="17" y="38" width="14" height="38" rx="7" fill="#2563EB"/>
+  <!-- bar 3 tall blue -->
+  <rect   x="34" y="6"  width="14" height="70" rx="7" fill="#2563EB"/>
+  <!-- bar 4 tall navy -->
+  <rect   x="51" y="6"  width="14" height="70" rx="7" fill="#0D1B2E"/>
+  <!-- bar 5 medium navy -->
+  <rect   x="68" y="38" width="14" height="38" rx="7" fill="#0D1B2E"/>
+  <!-- dot right -->
+  <circle cx="88" cy="73" r="7"  fill="#0D1B2E"/>
+</svg>
