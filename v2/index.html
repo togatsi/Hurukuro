@@ -102,8 +102,8 @@
       justify-content: space-between;
       gap: 1.5rem;
     }
-    /* HC geometric logo */
-    .nav-logo svg { height: 56px; width: auto; }
+    /* HC monogram logo */
+    .nav-logo svg { height: 52px; width: auto; }
 
     .nav-pill {
       background: var(--white);
@@ -554,18 +554,22 @@
 <nav id="nav" role="navigation" aria-label="Main navigation">
   <div class="container nav-inner">
 
-    <!-- HC geometric line-art logo (SVG recreation) -->
+    <!-- HC monogram logo — faithful SVG recreation of provided PNG -->
     <a href="#" class="nav-logo" aria-label="Hurukuro Communications">
-      <svg viewBox="0 0 130 68" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <!-- H letterform -->
-        <rect x="2"  y="4"  width="7" height="44" rx="3.5" fill="white"/>
-        <rect x="29" y="4"  width="7" height="44" rx="3.5" fill="white"/>
-        <rect x="2"  y="22" width="34" height="7" rx="3.5" fill="white"/>
-        <!-- C letterform -->
-        <path d="M 52 4 A 22 24 0 0 0 52 52" stroke="white" stroke-width="7" fill="none" stroke-linecap="round"/>
+      <svg viewBox="0 0 148 72" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <!-- H: left vertical -->
+        <line x1="6"  y1="5"  x2="6"  y2="55" stroke="white" stroke-width="4.5" stroke-linecap="round"/>
+        <!-- H: right vertical (shared spine with C opening) -->
+        <line x1="34" y1="5"  x2="34" y2="55" stroke="white" stroke-width="4.5" stroke-linecap="round"/>
+        <!-- H: crossbar -->
+        <line x1="6"  y1="30" x2="34" y2="30" stroke="white" stroke-width="4.5" stroke-linecap="round"/>
+        <!-- C: large arc wrapping from top-right, opening faces left toward H -->
+        <path d="M 60 5 A 28 27.5 0 0 1 60 55" stroke="white" stroke-width="4.5" fill="none" stroke-linecap="round"/>
+        <!-- Inner circle arc of HC monogram (top half circle inside C) -->
+        <path d="M 34 5 A 13 12.5 0 0 1 34 30" stroke="white" stroke-width="4.5" fill="none" stroke-linecap="round"/>
         <!-- Wordmark -->
-        <text x="2"  y="64" font-family="'Inter',Arial,sans-serif" font-weight="700" font-size="7.5" fill="white" letter-spacing="2.5">HURUKURO</text>
-        <text x="2"  y="68" font-family="'Inter',Arial,sans-serif" font-weight="400" font-size="5.5" fill="rgba(255,255,255,.65)" letter-spacing="2" dy="1">COMMUNICATIONS</text>
+        <text x="74"  y="26" font-family="'Inter',Arial,sans-serif" font-weight="300" font-size="9"   fill="white" letter-spacing="5">HURUKURO</text>
+        <text x="74"  y="40" font-family="'Inter',Arial,sans-serif" font-weight="300" font-size="6.5" fill="rgba(255,255,255,.8)" letter-spacing="4">COMMUNICATIONS</text>
       </svg>
     </a>
 
