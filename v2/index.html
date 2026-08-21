@@ -432,6 +432,7 @@
       transition: transform var(--trans);
     }
     .flag-card:hover { transform: scale(1.03); }
+    .flag-img { width: 64px; height: 64px; border-radius: 50%; object-fit: cover; margin-bottom: .75rem; display: block; }
     .flag-emoji { font-size: 2rem; margin-bottom: .75rem; display: block; }
     .flag-card.last-row { grid-column: 1; }
 
@@ -910,19 +911,19 @@
     <h2 id="footprint-heading"><span>Global</span> <span class="blue">footprint</span></h2>
     <div class="flags-grid" role="list" aria-label="Our office locations">
       <div class="flag-card anim" role="listitem">
-        <span class="flag-emoji" aria-hidden="true">🇿🇦</span>
+        <img class="flag-img" src="images/flags/south-africa.png" alt="South Africa flag" onerror="this.outerHTML='<span class=flag-emoji aria-hidden=true>🇿🇦</span>'">
         South Africa
       </div>
       <div class="flag-card anim" role="listitem">
-        <span class="flag-emoji" aria-hidden="true">🇸🇪</span>
+        <img class="flag-img" src="images/flags/sweden.png" alt="Sweden flag" onerror="this.outerHTML='<span class=flag-emoji aria-hidden=true>🇸🇪</span>'">
         Sweden
       </div>
       <div class="flag-card anim" role="listitem">
-        <span class="flag-emoji" aria-hidden="true">🇧🇼</span>
+        <img class="flag-img" src="images/flags/botswana.png" alt="Botswana flag" onerror="this.outerHTML='<span class=flag-emoji aria-hidden=true>🇧🇼</span>'">
         Botswana
       </div>
       <div class="flag-card anim" role="listitem">
-        <span class="flag-emoji" aria-hidden="true">🇬🇧</span>
+        <img class="flag-img" src="images/flags/uk.png" alt="United Kingdom flag" onerror="this.outerHTML='<span class=flag-emoji aria-hidden=true>🇬🇧</span>'">
         United Kingdom
       </div>
       <div class="flag-card anim last-row" role="listitem">
